@@ -71,7 +71,8 @@ class Style extends Evented {
         this._resetUpdates();
 
         options = util.extend({
-            validate: typeof stylesheet === 'string' ? !mapbox.isMapboxURL(stylesheet) : true
+            // validate: typeof stylesheet === 'string' ? !mapbox.isMapboxURL(stylesheet) : true
+            validate: false
         }, options);
 
         this.setEventedParent(map);
